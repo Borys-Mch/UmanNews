@@ -1,0 +1,533 @@
+/*   
+Theme Name: UmanNews
+Theme URI: https://github.com/Borys-Mch/UmanNews
+Version: 1.0
+Tags:  html5, bootstrap
+Description: wordpress theme
+Author: Borys.Mch
+Author URI: http://masiv.top
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon/icomoon.eot');
+    src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (min-width: 979px) { 
+	ul.nav li.dropdown.show-on-hover:hover > ul.dropdown-menu {
+		display: block;
+	}
+	.comment-list .children {
+		padding: 0;
+		margin-left: 74px;
+		padding-bottom: 15px;
+	}
+	.comment-list .media {
+		margin-top: 0;
+	}
+
+}
+@media (min-width: 768px){
+	.search-bt {
+		display: none;
+	}
+}
+@media (max-width: 768px){
+	.d-non{
+		display: none;
+	}
+	#thum{
+		height: 150px
+	}
+} 
+body {
+	background-image: url('http://umannews.in.ua/wp-content/uploads/2016/03/efg.jpg');
+	background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+iframe{
+	width: 100%;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: none;
+    transition: none;
+}
+a:active, a:hover {
+    color: #3B8DBD;
+    outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	color: #000;
+	font-family: Ubuntu;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 23px 0;
+	margin: 2.3rem 0;
+}
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+table {
+	border-spacing: 0;
+	margin: 0 0 23px;
+	margin: 0 0 2.3rem;
+	width: 100%;
+}
+
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.thumbnail>img {
+	width: 100%;
+}
+.thumbnail {
+    height: 300px;
+    overflow: hidden;
+}
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 4px #636363;
+    margin: 0 auto;
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: hidden;
+    width: 100%;
+}
+.hedr {
+	
+}
+.cont {
+    padding: 26px 15px;
+}
+.foot {
+	background: #000;
+    padding: 26px 15px;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+ /* Шапка сайта. */
+.site-description {
+    color: #333;
+    font: normal 14px Ubuntu;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.banr {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.home-link {
+	min-height: 120px;
+}
+.logo {
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* Верхнє меню. */
+.navbar {
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 0px;
+    border: 0;
+    margin: 0 -15px;
+}
+.navbar-default {
+    background-color: #3B8DBD;
+    border: none;
+    border-radius: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+}
+.navbar-default .navbar-nav>.active>a {
+	background-color: #092F46;
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: #0A5E9B;
+    color: #fff;
+	-webkit-transition: none;
+    transition: none;
+}
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.meta {
+	color: #bdbcbc;
+}
+.meta a {
+    color: #bdbcbc;
+    text-decoration: none;
+}
+.meta a:hover {
+    color: #b00;
+}
+
+/* =Віджети
+----------------------------------------------- */
+.widget {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-hyphens: auto;
+	-moz-hyphens:    auto;
+	-ms-hyphens:     auto;
+	hyphens:         auto;
+	margin: 0 0 23px;
+	margin: 0 0 2.3rem;
+	padding: 0 0 23px;
+	padding: 0 0 2.3rem;
+	word-wrap: break-word;
+}
+
+.widget:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+.widgettitle {
+	font-family: Ubuntu;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	background-color:#3B8DBD;
+	color:#FFF;
+	padding:8px;
+}
+
+.widget ul,
+.widget ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget li {
+	padding: 5px 0;
+}
+
+.widget .children,
+.widget .sub-menu {
+	margin-top: 5px;
+	margin-top: 0.5rem;
+}
+
+.widget .children li:last-child,
+.widget .sub-menu li:last-child {
+	padding-bottom: 0;
+}
+
+.widget li > ul,
+.widget li > ol {
+	margin-left: 20px;
+	margin-left: 2rem;
+}
+
+.widget a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Календар */
+.widget_calendar table {
+	margin-bottom: 0;
+}
+
+.widget_calendar table,
+.widget_calendar td {
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.widget_calendar caption {
+	font-size: 11px;
+	font-size: 1.1rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.widget_calendar th {
+	border: 1px solid #000;
+	border-width: 1px 0;
+}
+
+.widget_calendar th,
+.widget_calendar td {
+	padding: 0;
+	text-align: center;
+}
+
+.widget_calendar a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-weight: bold;
+}
+
+.widget_calendar tbody td {
+	color: rgba(0, 0, 0, 0.45);
+}
+
+.widget_calendar tbody .pad {
+	background-color: transparent;
+}
+
+.widget_calendar tfoot td {
+	border-top: 1px solid #000;
+	text-align: left;
+}
+
+.widget_calendar tfoot td:last-child {
+	text-align: right;
+}
+
+.widget_calendar tfoot a {
+	border: 0;
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* Строка пошуку */
+.search-form {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+input[type=search] {
+    background-color: transparent;
+    background-image: url(images/search-icon.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: 0;
+    cursor: pointer;
+    height: 36px;
+    margin: 0;
+    padding: 0 0 0 42px;
+    padding: 0 0 0 4.2rem;
+    position: relative;
+    -webkit-transition: width 0.2s ease, background 0.2s ease;
+    transition: width 0.2s ease, background 0.2s ease;
+    width: 0;
+}
+input[type=search]:focus {
+    width: 200px;
+    background-color: #eaeaea;
+    outline: none;
+}
+.search-bt {
+	margin: 3px;
+    background-color: transparent;
+    border: none;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	vertical-align: middle;
+}
+.tw-recent-posts .featured-post img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Assistive text */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.read-more
+{
+	font-size:15px;
+	background-color:#3B8DBD;
+	padding:5px;
+	color:#FFF;
+	text-align:center;
+	position:relative;
+	left:337px;
+}
+
+.read-more:hover
+{
+	color:#FFF;
+	background-color:#0A5E9B;
+}
+
+.mainhrline {
+    color: #000;
+    height: 5px;
+    background-color: #3B8DBD;
+    margin: 25px 0 0 0;
+}
+
+#tw-recent-posts-2 .post_title {
+	font-size: 1.3em;
+    line-height:13px !important;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#tw-recent-posts-2 .thumbnail {
+    height: 100px;
+    overflow: hidden;
+    border: 0;
+	margin-bottom: -20px;
+}
+#tw-recent-posts-3 .post_title {
+    font-size: 30px !important;
+    line-height: 23px !important;
+    margin-bottom: 10px;
+}
+#tw-recent-posts-3 .thumbnail {
+    height: 200px;
+    overflow: hidden;
+    border: 0;
+}
+#tw-recent-posts-4 .post_title {
+	font-size: 1.3em;
+    line-height:13px !important;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#tw-recent-posts-4 .thumbnail {
+    height: 100px;
+    overflow: hidden;
+    border: 0;
+	margin-bottom: -15px;
+}
+
+.tw-recent-posts .featured-post .excerpt {
+    clear: none;
+    text-align: justify;
+    line-height: 16px;
+    top: 5px !important;
+    position: relative;
+    margin: 0;
+    margin-top: -15px;
+}
