@@ -256,9 +256,9 @@ table {
 .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-size: 17px;
-    padding: 8px 15px;
+    padding: 8px 22px;
     text-transform: uppercase;
-	font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .navbar-default .navbar-nav>.active>a {
 	background-color: #092F46;
